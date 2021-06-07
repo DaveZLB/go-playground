@@ -1,15 +1,7 @@
-package main
-
-import "fmt"
+package array
 
 //在数组中找到 2 个数之和等于给定值的数字，结果返回 2 个数字在数组中的下标。
 
-func main() {
-	arr := []int{1, 2, 4, 8, 7}
-	target := 15
-	result := twoSum(arr, target)
-	fmt.Printf("%+v\n", result)
-}
 
 //巧用map降低时间复杂度到o(n)
 func twoSum(arr []int, target int) []int {
