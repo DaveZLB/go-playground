@@ -50,8 +50,6 @@ func (e Event) Start() {
 
 }
 
-//使用wire依赖注入
-
 func main() {
 	c := dig.New()
 	_ = c.Provide(func() string {
